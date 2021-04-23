@@ -11,13 +11,14 @@ To run the code for test cases, switch to the test repository, and run each test
 - Set L2 regularization coefficient "lam_reg", for the optimization of loss function.
 - Set "beta_low" and "beta_up" for stopping condition in the blending stage.
 - To run the model and store the data:
-  1) Build a model from Ensemble class:
+  1)Build a model from Ensemble class:
+  
      model = Ensemble(models, n_data, n_total, x, y, 
                       x_test, y_test, x_total, y_total,
                       d, n_epochs, lam_reg, beta_low, beta_up)
-  2) To run: 
-  3) model.ensemble()
-  4)To store the data and plots: 
+  2)To run: 
+    model.ensemble()
+  3)To store the data and plots: 
     model.save_data(directory_name, networks_properties)
     model.plot_aggregate(directory_name)
 
